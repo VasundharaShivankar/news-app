@@ -5,11 +5,17 @@ import Articles from '../../components/Articles/Articles'
 
 function Home() {
     const [news, setNews] =useState([])
+    const [searchQuery, setSearchQuery] = useState("apple")
 
     //function
     const loadNews = async()=>{
-        const response = await axios.get(`https://newsapi.org/v2/everything?q=apple&from=2024-07-31&to=2024-07-31&sortBy=popularity&apiKey=d3d19232f0644803b4b26a3ff2f3953a`)
+        try{
+        const response = await axios.get(`https://newsapi.org/v2/everything?q=${searchQuery}&from=2024-07-31&to=2024-07-31&sortBy=popularity&apiKey=${process.env.REACT_APP_API_KEY}`);
         setNews(response.data.articles)
+        }
+        catch(error){
+            console.log(error)
+        }
     }
 
     //Load the news
@@ -17,7 +23,9 @@ function Home() {
         loadNews()
     },[])
 
-
+    useEffect(()=>{
+        loadNews()
+    },[searchQuery])
 
   return (
     <div>
