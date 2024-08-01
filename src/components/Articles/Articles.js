@@ -8,9 +8,12 @@ function Articles({author, title, description, url, urlToImage, publishedAt, con
           <h1 className='title-article'>{title}</h1>
           
           <div className='article-info'>
-            <p className='author'>{author}</p>
+            <b><p className='author'>{author}</p></b>
             <p className='publishedAt'>{publishedAt}</p>
           </div>
+
+          <p className='description'>{description}</p>
+          <a href={url} target='blank' className='Readmore'>READ MORE</a>
       </div>
   )
 }

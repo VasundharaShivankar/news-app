@@ -18,7 +18,27 @@
 }
 .title-article{
     font-size: 19px;
+    padding: 5px;
 }
 .article-info{
-    
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-style: italic;
+}
+.description{
+    padding: 5px;
+}
+.Readmore{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration: none;
+    /* background-color: rgb(187, 49, 49); */
+    background-color:black;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
