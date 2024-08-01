@@ -19,6 +19,7 @@
 .title-article{
     font-size: 19px;
     padding: 5px;
+    font-weight: bold;
 }
 .article-info{
     padding: 5px;
@@ -26,9 +27,11 @@
     justify-content: space-between;
     margin-top: 10px;
     font-style: italic;
+    font-weight: bold;
 }
 .description{
     padding: 5px;
+    font-weight: bold;
 }
 .Readmore{
     display: block;
