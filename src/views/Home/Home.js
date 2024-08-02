@@ -5,7 +5,7 @@ import Articles from '../../components/Articles/Articles'
 
 function Home() {
     const [news, setNews] =useState([])
-    const [searchQuery, setSearchQuery] = useState("apple")
+    const [searchQuery, setSearchQuery] = useState("ai")
 
     //function
     const loadNews = async()=>{
