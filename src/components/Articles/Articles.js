@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Articles.css"
 
-function Articles({author, title, description, url, urlToImage, publishedAt, content}) {
+function Articles({author, title, description, url, urlToImage, publishedAt}) {
   return (
       <div className="news-article-card">
           <img src={urlToImage} className='news-article-img'/>
@@ -13,7 +13,7 @@ function Articles({author, title, description, url, urlToImage, publishedAt, con
           </div>
 
           <p className='description'>{description}</p>
-          <a href={url} target='blank' className='Readmore'>READ MORE</a>
+          <a href={url} target='blank' className='readmore'>READ MORE</a>
       </div>
   )
 }
